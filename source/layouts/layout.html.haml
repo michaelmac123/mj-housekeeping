@@ -9,7 +9,7 @@
   /<![endif]
   %head
     %meta(http-equiv="content-type" content="text/html" charset="utf-8")
-    %title= locals[:name].blank? ? "Mitchell Contractors | Welcome" : "Mitchell Contractors | #{locals[:name]}"
+    %title= locals[:name].blank? ? "MJ Housekeeping | Welcome" : "MJ Housekeeping | #{locals[:name]}"
     %meta(http-equiv="x-ua-compatible" content="ie=edge,chrome=1")
     %meta(name="description" content="")
     %meta(name="author" content="")
@@ -26,10 +26,24 @@
 
     -# App Icons
     %link(rel="shortcut icon" href="/images/favicon.png")
-    %link(rel="apple-touch-icon-precomposed" href="/images/apple-touch-icon-precomposed.png")
-    %link(rel="apple-touch-icon-precomposed" sizes="57x57" href="/images/apple-touch-icon-57x57-precomposed.png")
-    %link(rel="apple-touch-icon-precomposed" sizes="72x72" href="/images/apple-touch-icon-72x72-precomposed.png")
-    %link(rel="apple-touch-icon-precomposed" sizes="114x114" href="/images/apple-touch-icon-114x114-precomposed.png")
+
+    %link{ href: "/images/favicons/apple-icon-57x57.png", rel: "apple-touch-icon", sizes: "57x57"}
+    %link{ href: "/images/favicons/apple-icon-60x60.png", rel: "apple-touch-icon", sizes: "60x60"}
+    %link{ href: "/images/favicons/apple-icon-72x72.png", rel: "apple-touch-icon", sizes: "72x72"}
+    %link{ href: "/images/favicons/apple-icon-76x76.png", rel: "apple-touch-icon", sizes: "76x76"}
+    %link{ href: "/images/favicons/apple-icon-114x114.png", rel: "apple-touch-icon", sizes: "114x114"}
+    %link{ href: "/images/favicons/apple-icon-120x120.png", rel: "apple-touch-icon", sizes: "120x120"}
+    %link{ href: "/images/favicons/apple-icon-144x144.png", rel: "apple-touch-icon", sizes: "144x144"}
+    %link{ href: "/images/favicons/apple-icon-152x152.png", rel: "apple-touch-icon", sizes: "152x152"}
+    %link{ href: "/images/favicons/apple-icon-180x180.png", rel: "apple-touch-icon", sizes: "180x180"}
+    %link{ href: "/images/favicons/android-icon-192x192.png", rel: "icon", sizes: "192x192", type: "image/png"}
+    %link{ href: "/images/favicons/favicon-32x32.png", rel: "icon", sizes: "32x32", type: "image/png"}
+    %link{ href: "/images/favicons/favicon-96x96.png", rel: "icon", sizes: "96x96", type: "image/png"}
+    %link{ href: "/images/favicons/favicon-16x16.png", rel: "icon", sizes: "16x16", type: "image/png"}
+    %link{ href: "/images/favicons/manifest.json", rel: "manifest"}
+    %meta{ content: "#ffffff", name: "msapplication-TileColor"}
+    %meta{ content: "/ms-icon-144x144.png", name: "msapplication-TileImage"}
+    %meta{ content: "#ffffff", name: "theme-color"}
 
     -# Javascripts
     = javascript_include_tag "//code.jquery.com/jquery-1.11.2.min.js"
@@ -37,12 +51,17 @@
 
     = javascript_include_tag "//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"
     = javascript_include_tag "//cdn.jsdelivr.net/headroomjs/0.5.0/headroom.min.js"
+    %script{src: "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js", integrity: "sha256-KXn5puMvxCw+dAYznun+drMdG1IFl3agK0p/pqT9KAo= sha512-2e8qq0ETcfWRI4HJBzQiA3UoyFk6tbNyG+qSaIBZLyW9Xf3sWZHN/lxe9fTh1U45DpPf07yj94KsUHHWe4Yk1A==", crossorigin: "anonymous"}
     = javascript_include_tag :all
 
+    -# Fonts
     %link{ href: '//fonts.googleapis.com/css?family=Lato:300,400', rel: 'stylesheet', type: 'text/css'}
+    %link{href: "https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css", rel: "stylesheet", integrity: "sha256-3dkvEK0WLHRJ7/Csr0BZjAWxERc5WH7bdeUya2aXxdU= sha512-+L4yy6FRcDGbXJ9mPG8MT/3UCDzwR9gPeyFNMCtInsol++5m3bk2bXWKdZjvybmohrAsn3Ua5x8gfLnbE1YkOg==", crossorigin: "anonymous"}
 
     -# Stylesheets
+    %link{href: "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css", rel: "stylesheet", integrity: "sha256-7s5uDGW3AHqw6xtJmNNtr+OBRJUlgkNJEo78P4b0yRw= sha512-nNo+yCHEyn0smMxSswnf/OnX6/KwJuZTlNZBjauKhTK0c+zT+q5JOCx0UFhXQ6rJR9jg6Es8gPuD2uZcYDLqSw==", crossorigin: "anonymous"}
     = stylesheet_link_tag :site, media: 'all'
 
   %body{class: page_classes || 'page'}
     = yield
+    = partial "layouts/footer"

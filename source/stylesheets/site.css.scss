@@ -1,67 +1,151 @@
 @charset "utf-8";
 @import "normalize";
+@import "fonts";
+@import "variables";
+@import "mixins";
 
-body {
-  background: #ECC561;
+// Resets
+body,
+html {
+  background: $white;
+  border-color: $light-gray;
+  height: 100%;
+  font:{
+    family: $work-class;
+    size: 1em;
+    weight: normal; }
+  width:  100%;
   text-align: center;
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 1em;
+}
+h1,
+h2,
+h3 {
+  font:{
+    family: $upper-class;
+    weight: normal; } }
+
+h4,
+h5,
+h6 {
+  font:{
+    family: $dress-class;
+    weight: normal; } }
+
+a,
+ul li,
+p {
+  font:{
+    family: $work-class;
+    weight: normal; } }
+
+.bold {
+  font-weight:  bold; }
+
+.border-left  { border-left:  1px solid darken($bone, 10); }
+.clear-both   { clear: both;    }
+.clear-left   { clear: left;    }
+.clear-right  { clear: right;   }
+.margin-auto  { margin: 0 auto; }
+
+// Overrides
+.headroom {
+    -webkit-transition: transform 200ms linear;
+    -o-transition: transform 200ms linear;
+    transition: transform 200ms linear }
+
+.headroom--pinned {
+    -webkit-transform: translateY(0%);
+    -moz-transform: translateY(0%);
+    -ms-transform: translateY(0%);
+    -o-transform: translateY(0%);
+    transform: translateY(0%) }
+
+.headroom--unpinned {
+    -webkit-transform: translateY(-100%);
+    -moz-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    -o-transform: translateY(-100%);
+    transform: translateY(-100%) }
+
+.modal {
+  &-header {
+    padding: 10px 20px 25px 15px;
+  }
 }
 
-.logo img {
-  height: 18.75em;
-  margin-top: 6em;
-}
 
-h1 {
-  color: rgba(0,0,0,0.5);
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 1.8em;
-  font-weight: 400;
-  margin: 0;
-}
+@import 'navigation';
 
-.doc {
-  margin: 3em 0;
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 1.1em;
-  font-weight: 300;
-
-  a {
-    border: 1px solid white;
-    border-radius: 3px;
-    padding: 0.75em 0.7em;
-    color: white;
-    text-decoration: none;
-    transition: color 0.1s linear;
-    &:hover {
-      background: rgba(0,0,0,0.2);
-      color: white;
-      transition: all 0.15s linear;
+.jumbotron {
+  @include respond-to('small') {
+    background:{
+      position: 70% top;
+      size: inherit;
     }
+    min-height: 450px;
+  }
+  background:{
+    image: url("../images/hero/mj-housekeeping-hero-img.jpeg");
+    repeat: no-repeat;
+    position: center top;
+    size: cover;
+  }
+  margin: 0;
+  min-height: 650px;
+  padding: 0;
+  text-align: left;
+  &-cta-container {
+    @include prefix(box-shadow, 0 0 3px rgba($black, 0.15), moz webkit o ms);
+    @include prefix(border-radius, 2px, moz webkit o ms);
+    background-color: rgba($white, 0.25);
   }
 }
 
-.welcome {
-  -webkit-animation-name: welcome;
-  -webkit-animation-duration: .9s;
-}
+.content-section {
+  &-a {
+    background-color: #fafafa;
+    border:{
+      top:        1px solid $light-gray;
+      bottom:     1px solid $light-gray;  }
+    padding:      40px 0; }
+  &-b {
+    border:{
+      bottom:     1px solid $light-gray; }
+    padding:      40px 0; }
+  &-image-logo {
+    width: 50%;
+  }
+  &-image-logo-text {
+    display: block;
+    margin-top: -15px;
+    @include respond-to('small') {
+      margin-top: 0; }
+  }
+  &-tiles-3 {
+    @include prefix(border-radius, 2px, moz webkit o ms);
+    @include prefix(transition,border-color 500ms, moz webkit o ms);
+    @include float;
+    border: 3px solid $light-gray;
+    margin:{
+      left: 10px;
+      right: 10px; }
+    padding: 10px;
+    width: calc((100% / 3) - 20px);
+    &:hover {
+      @include prefix(box-shadow, 0 0 3px rgba($brand-red, 0.25), moz webkit o ms);
+      border-color: $brand-red;
+      text-decoration: none; }
+    @include respond-to('medium') {
+      margin:{
+        top: 5px;
+        bottom: 5px;
+      }
+      width: calc(50% - 20px);
+    }
+    @include respond-to('small') {
+      width: calc(100% - 20px);
+    }
 
-@-webkit-keyframes welcome {
-  from {
-    -webkit-transform: scale(0);
-    opacity: 0;
-  }
-  50% {
-   -webkit-transform: scale(0);
-   opacity: 0;
-  }
-  82.5% {
-    -webkit-transform: scale(1.03);
-    -webkit-animation-timing-function: ease-out;
-    opacity: 1;
-  }
-  to {
-    -webkit-transform: scale(1);
+
   }
 }

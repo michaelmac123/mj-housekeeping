@@ -1,0 +1,28 @@
+.navbar {
+  background:{
+    color: rgba($black, 0.15); }
+  border-bottom: 1px solid rgba($white, 0.5);
+}
+.navbar-nav li {
+  a {
+    border-right: 1px solid rgba($black, 0.5);
+    color: $black;
+    &:hover {
+      background-color: rgba($light-gray, 0.55); }
+  }
+  &:last-of-type a {
+    border-right: none;
+  }
+}
+
+.navbar-toggle {
+  @include prefix(transition,background 500ms, moz webkit o ms);
+  background: rgba($light-gray, 0.5);
+  &:hover {
+    @include prefix(transition,background 500ms, moz webkit o ms);
+    background: rgba($light-gray, 1);;
+  }
+}
+.icon-bar {
+  background: rgba($black, .7);
+}
