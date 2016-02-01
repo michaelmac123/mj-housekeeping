@@ -9,6 +9,7 @@ body,
 html {
   background: $white;
   border-color: $light-gray;
+  color: $charcoal;
   height: 100%;
   font:{
     family: $work-class;
@@ -37,6 +38,9 @@ p {
   font:{
     family: $work-class;
     weight: normal; } }
+
+.block {
+  display: block; }
 
 .bold {
   font-weight:  bold; }
@@ -97,7 +101,10 @@ p {
   &-cta-container {
     @include prefix(box-shadow, 0 0 3px rgba($black, 0.15), moz webkit o ms);
     @include prefix(border-radius, 2px, moz webkit o ms);
-    background-color: rgba($white, 0.25);
+    background-color: rgba($white, 0.5);
+  }
+  p {
+    font-size: 18px;
   }
 }
 
@@ -105,27 +112,43 @@ p {
   &-a {
     background-color: #fafafa;
     border:{
-      top:        1px solid $light-gray;
-      bottom:     1px solid $light-gray;  }
-    padding:      40px 0; }
+      top: 1px solid $light-gray;
+      bottom: 1px solid $light-gray;  }
+    padding-bottom: 40px; }
   &-b {
     border:{
-      bottom:     1px solid $light-gray; }
-    padding:      40px 0; }
+      bottom: 1px solid $light-gray; }
+    padding: 40px 0; }
+  &-main-title {
+    color: $brand-blue;
+    margin-bottom: 20px;
+  }
   &-image-logo {
     width: 50%;
   }
   &-image-logo-text {
+    color: $black;
     display: block;
-    margin-top: -15px;
+    margin-top: -10px;
     @include respond-to('small') {
       margin-top: 0; }
   }
+  &-section-title {
+    display: block;
+    font:{
+      size: 1.2em;
+      weight: bold; }
+  }
+  &-tiles {
+    @include prefix(border-radius, 1px, moz webkit o ms);
+    border: 1px solid $light-gray;
+  }
   &-tiles-3 {
-    @include prefix(border-radius, 2px, moz webkit o ms);
+    @include prefix(border-radius, 1px, moz webkit o ms);
     @include prefix(transition,border-color 500ms, moz webkit o ms);
     @include float;
-    border: 3px solid $light-gray;
+    border: 1px solid $light-gray;
+    color: $brand-blue;
     margin:{
       left: 10px;
       right: 10px; }
@@ -145,7 +168,80 @@ p {
     @include respond-to('small') {
       width: calc(100% - 20px);
     }
-
-
+  }
+  &-tiles-header {
+    display: inline-block;
+    vertical-align: middle;
+    span {
+      display: inline-block;
+      text-align: left;
+      width: 50%;
+    }
+    i {
+      display: inline-block;
+      font-size: 1.75em;
+      position: relative;
+      top: -7px;
+    }
+  }
+  &-callout {
+    color: $brand-red;
+    display: block;
+    font:{
+      weight: bold; }
+    &:first-of-type {
+    font:{
+      size: 1.2em;
+      style: italic; }
+    }
+  }
+  &-testimonial {
+    color: $brand-red;
+    display: block;
+    span{
+      display: block;
+      &:first-of-type {
+        font:{
+          size: 1.2em;
+          style: italic; }
+        text-align: center;
+      }
+      &:last-of-type {
+        font-weight: bold;
+        text-align: right;
+        width: 80%;
+      }
+    }
+  }
+}
+.footer {
+  min-height: 75px;
+  p {
+    font-size: 0.8em;
+    padding: 5px 0 10px 0;
+  }
+  &-navbar {
+    display: inline-block;
+    list-style:none;
+    margin: 10px 0 0 0;
+    padding: 0;
+    vertical-align: middle;
+    li {
+      border-right: 1px solid $light-gray;
+      display: inline-block;
+      padding: 0 10px;
+      &:last-of-type {
+        border-right: none;
+      }
+    }
+    a {
+      @include prefix(transition,color 500ms, moz webkit o ms);
+      color: #777;
+      &:hover {
+        @include prefix(transition,color 500ms, moz webkit o ms);
+        color: $brand-red;
+        text-decoration: none;
+      }
+    }
   }
 }

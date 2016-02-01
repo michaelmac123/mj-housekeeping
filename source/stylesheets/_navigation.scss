@@ -3,16 +3,73 @@
     color: rgba($black, 0.15); }
   border-bottom: 1px solid rgba($white, 0.5);
 }
-.navbar-nav li {
+.navbar-nav{
+  width: 100%;
   a {
-    border-right: 1px solid rgba($black, 0.5);
-    color: $black;
+    @include prefix(transition,background-color 500ms, moz webkit o ms);
+    color: lighten($black, 5);
+    padding: 15px;
     &:hover {
-      background-color: rgba($light-gray, 0.55); }
+      @include prefix(transition,background-color 500ms, moz webkit o ms);
+      background-color: rgba($light-gray, 0.55);
+      text-decoration: none; }
+    &.logo-link {
+      display: inline-block;
+      height: 50px;
+      padding: 0;
+      width: 50px;
+      &:hover {
+        background-color: transparent;
+        path {
+          @include prefix(transition,fill 500ms, moz webkit o ms);
+          fill: rgba($black, 0.5);
+        }
+      }
+    }
   }
-  &:last-of-type a {
-    border-right: none;
+  &-left-column  {
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+    width: 45%;
+    @include respond-to('small') {
+      display: block;
+      width:100%;
+    }
   }
+  &-right-column {
+    @extend .navbar-nav-left-column;
+    text-align: right;
+  }
+  &-left-content {
+    display: inline-block;
+    vertical-align: middle;
+    width: 40%;
+    @include respond-to('small') {
+      display: block;
+      text-align: left;
+      width:100%;
+    }
+  }
+  &-right-content {
+    @extend .navbar-nav-left-content;
+  }
+  &-logo-content {
+    display: inline-block;
+    height: 50px;
+    vertical-align: middle;
+    width: 50px;
+    @include respond-to('small') {
+      display: none;
+    }
+  }
+  &-ico {
+    path {
+      @include prefix(transition,fill 500ms, moz webkit o ms);
+      fill: rgba($black, 0.25);
+    }
+  }
+
 }
 
 .navbar-toggle {

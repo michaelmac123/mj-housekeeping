@@ -37,8 +37,9 @@ $colors: "brand-red" $brand-red, "charcoal" $charcoal, "white" $white, "light-bl
     background: lighten($primary, 8);
     color:      $white; } }
 
-.btn.btn-med-blue{
-  $primary:     $med-blue;
+.btn.btn-med-blue {
+  $primary:     $brand-blue;
+  background:   $primary;
   border-color: lighten($med-blue, 20);
   color:        $white;
   &:hover {

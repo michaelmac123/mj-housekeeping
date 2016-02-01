@@ -7,10 +7,17 @@
         %span.icon-bar
         %span.icon-bar
     #navbar.navbar-collapse.collapse
-      %ul.nav.navbar-nav
-        %li.active
-          = link_to 'Rates & Services', "#"
-        %li
-          = link_to 'Get a Quote', "#"
-        %li
-          = link_to 'FAQ’s', "#"
+      .nav.navbar-nav
+        .navbar-nav-left-column
+          .navbar-nav-left-content
+            = link_to 'Rates & Services', "#"
+          .navbar-nav-left-content
+            = link_to 'Get a Quote', "#"
+        .navbar-nav-logo-content
+          %a.logo-link{href: '/'}= inline_svg('mjs-housekeeping-orig-logo', class: "navbar-nav-ico")
+
+        .navbar-nav-right-column
+          .navbar-nav-right-content
+            = link_to 'FAQ’s', "#"
+          .navbar-nav-right-content
+            = link_to 'Join Our Team', "#"
