@@ -118,6 +118,26 @@ p {
       margin-bottom: 0;
       padding-bottom: 10px; }
   }
+  &-testimonial {
+    color: $brand-red;
+    display: block;
+    span{
+      display: block;
+      &:first-of-type {
+        font:{
+          size: 1.5em;
+          style: italic; }
+        text-align: center;
+      }
+      &:last-of-type {
+        font:{
+          size: 1.25em;
+          weight: bold; }
+        text-align: right;
+        width: 90%;
+      }
+    }
+  }
 }
 
 .content-section {
