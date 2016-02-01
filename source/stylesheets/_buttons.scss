@@ -1,0 +1,72 @@
+// Button colors
+.btn.btn-default{
+  @include prefix(transition,all 500ms, moz webkit o ms);
+  $primary:     $white;
+  background:   $primary;
+  border-color: $light-gray;
+  color:        $gray;
+  &:hover {
+    @include prefix(transition,all 500ms, moz webkit o ms);
+    background: lighten($gray, 8);
+    border-color: lighten($gray, 8);
+    color:      $white; } }
+.btn.btn-dark-blue{
+  @include prefix(transition,all 500ms, moz webkit o ms);
+  $primary:     $dark-blue;
+  background:   $primary;
+  border-color: lighten($primary, 20);
+  color:        $white;
+  &:hover {
+    @include prefix(transition,all 500ms, moz webkit o ms);
+    background: lighten($gray, 8);
+    border-color: lighten($gray, 8);
+    color:      $white; } }
+
+.btn.btn-med-blue {
+  @include prefix(transition,all 500ms, moz webkit o ms);
+  $primary:     $brand-blue;
+  background:   $primary;
+  border-color: lighten($med-blue, 20);
+  color:        $white;
+  &:hover {
+    @include prefix(transition,all 500ms, moz webkit o ms);
+    background: lighten($gray, 8);
+    border-color: lighten($gray, 8);
+    color:      $white; } }
+
+.btn.btn-lt-blue{
+  @include prefix(transition,all 500ms, moz webkit o ms);
+  $primary:     lighten($med-blue, 10);
+  background:   $primary;
+  border-color: lighten($primary, 20);
+  color:        $white;
+  &:hover {
+    @include prefix(transition,all 500ms, moz webkit o ms);
+    background: lighten($gray, 8);
+    border-color: lighten($gray, 8);
+    color:      $white; } }
+
+.btn.btn-gray{
+  @include prefix(transition,all 500ms, moz webkit o ms);
+  $primary:     $gray;
+  background:   $primary;
+  border-color: lighten($primary, 20);
+
+  color:        $white;
+  &:hover {
+    @include prefix(transition,all 500ms, moz webkit o ms);
+    background: lighten($gray, 8);
+    border-color: lighten($gray, 8);
+    color:      $white; } }
+
+.btn.btn-brand-red{
+  @include prefix(transition,all 500ms, moz webkit o ms);
+  $primary:     $brand-red;
+  background:   $primary;
+  border-color: lighten($primary, 20);
+  color:        $white;
+  &:hover {
+    @include prefix(transition,all 500ms, moz webkit o ms);
+    background: lighten($gray, 8);
+    border-color: lighten($gray, 8);
+    color:      $white; } }

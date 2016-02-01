@@ -3,6 +3,7 @@
 @import "fonts";
 @import "variables";
 @import "mixins";
+@import "buttons";
 
 // Resets
 body,
@@ -31,6 +32,10 @@ h6 {
   font:{
     family: $dress-class;
     weight: normal; } }
+
+h2 {
+  color: $brand-blue;
+}
 
 a,
 ul li,
@@ -95,7 +100,7 @@ p {
     size: cover;
   }
   margin: 0;
-  min-height: 650px;
+  min-height: 630px;
   padding: 0;
   text-align: left;
   &-cta-container {
@@ -124,7 +129,7 @@ p {
     margin-bottom: 20px;
   }
   &-image-logo {
-    width: 50%;
+    width: 40%;
   }
   &-image-logo-text {
     color: $black;
@@ -142,6 +147,11 @@ p {
   &-tiles {
     @include prefix(border-radius, 1px, moz webkit o ms);
     border: 1px solid $light-gray;
+    &.join-our-team {
+      border: 3px solid rgba($brand-blue, 0.5);
+      color: $brand-blue;
+      margin-top: 40px;
+    }
   }
   &-tiles-3 {
     @include prefix(border-radius, 1px, moz webkit o ms);

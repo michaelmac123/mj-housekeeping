@@ -27,52 +27,6 @@ $colors: "brand-red" $brand-red, "charcoal" $charcoal, "white" $white, "light-bl
     &-bg {
       background-color: $value; } } }
 
-// Button colors
-.btn.btn-dark-blue{
-  $primary:     $dark-blue;
-  background:   $primary;
-  border-color: lighten($primary, 20);
-  color:        $white;
-  &:hover {
-    background: lighten($primary, 8);
-    color:      $white; } }
-
-.btn.btn-med-blue {
-  $primary:     $brand-blue;
-  background:   $primary;
-  border-color: lighten($med-blue, 20);
-  color:        $white;
-  &:hover {
-    background: lighten($med-blue, 8);
-    color:      $white; } }
-
-.btn.btn-lt-blue{
-  $primary:     lighten($med-blue, 10);
-  background:   $primary;
-  border-color: lighten($primary, 20);
-  color:        $white;
-  &:hover {
-    background: lighten($primary, 8);
-    color:      $white; } }
-
-.btn.btn-gray{
-  $primary:     $gray;
-  background:   $primary;
-  border-color: lighten($primary, 20);
-  color:        $white;
-  &:hover {
-    background: lighten($primary, 8);
-    color:      $white; } }
-
-.btn.btn-brand-red{
-  $primary:     $brand-red;
-  background:   $primary;
-  border-color: lighten($primary, 20);
-  color:        $white;
-  &:hover {
-    background: lighten($primary, 8);
-    color:      $white; } }
-
 // Breakpoints
 $breakpoints: (
   'x-small':( max-width:  767px ),
