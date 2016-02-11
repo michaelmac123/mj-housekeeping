@@ -334,6 +334,33 @@ p {
 
 .content-section {
   &-a {
+    &-intro {
+      border:{
+        top: 5px solid $light-green;
+        bottom: 5px solid $light-green;
+      }
+      margin: 30px 0;
+      padding: 20px 0;
+    }
+    &-intro-title {
+      color: $light-green;
+      text-align: left;
+      span{
+        font:{
+          size: 1em;
+          weight: 200; }
+        display: block;
+        &:nth-of-type(1) {
+          color: rgba($light-green, 0.75);
+          font-size: 2em;
+        }
+      }
+    }
+    &-intro-text {
+      border-left: 1px solid $light-gray;
+      text-align: left;
+      padding: 20px 60px;
+    }
     &-content{
       border:{
         top: 5px solid $light-green;
@@ -453,6 +480,14 @@ p {
         text-align: right;
         width: 80%;
       }
+    }
+  }
+  &-b {
+    &-intro-text {
+      text-align: left;
+    }
+    &-intro-img img{
+      width: 100%;
     }
   }
 }

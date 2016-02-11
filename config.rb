@@ -13,6 +13,9 @@ page '/*.txt', layout: false
 
 # With alternative layout
 page '/index_alt.html', layout: 'layout_alt'
+page '/page_alt.html', layout: 'layout_alt'
+
+page '/page.html', layout: 'layout'
 
 # Proxy pages (http://middlemanapp.com/basics/dynamic-pages/)
 # proxy "/this-page-has-no-template.html", "/template-file.html", locals: {
