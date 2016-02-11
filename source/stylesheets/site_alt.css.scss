@@ -88,9 +88,8 @@ p {
     padding: 0;
     position: relative;
     @include respond-to('small') {
-      float: none;
-      padding: inherit;
       top: 0;
+      width: 100%;
 
     }
   }
@@ -99,7 +98,8 @@ p {
     height: auto;
     width: 100%;
     @include respond-to('small') {
-      width: 80%;
+      padding: 10px 0;
+      width: 79%;
     }
     &-img {
       width: 100%;
@@ -111,7 +111,6 @@ p {
       vertical-align: middle;
       width: 23%;
       @include respond-to('small') {
-        top: -5px;
         left: 20px;
       }
     }
@@ -146,7 +145,11 @@ p {
   li {
     border-right: 1px solid $light-gray;
     &:last-of-type {
-      border-right: none; }
+      border-right: none;
+      a {
+        border-bottom: none;
+      }
+    }
   }
   a {
     @include prefix(transition,all 500ms, moz webkit o ms);
@@ -346,10 +349,24 @@ p {
       }
       margin: 30px 0;
       padding: 20px 0;
+      @include respond-to('small') {
+        margin: 5px 0 20px 0;
+        padding: 5px 0;
+      }
     }
     &-intro-title {
       color: $light-green;
       text-align: left;
+      @include respond-to('small') {
+        font-size: 1.2em;
+        margin-top: 5px;@include respond-to('small') {
+        margin: 5px 0 20px 0;
+        padding: 5px 0;
+      }
+        padding:{
+          left: 10px;
+          right: 10px; }
+      }
       span{
         font:{
           size: 1em;
@@ -365,6 +382,8 @@ p {
       border-left: 1px solid $light-gray;
       text-align: left;
       padding: 20px 60px;
+      @include respond-to('small') {
+        padding: 10px;  }
     }
     &-content{
       border:{
