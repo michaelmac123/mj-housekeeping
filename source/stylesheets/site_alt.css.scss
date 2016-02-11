@@ -150,6 +150,11 @@ p {
         border-bottom: none;
       }
     }
+    &:first-of-type a{
+      @include respond-to('small'){
+        border-top: 6px solid $light-green;
+      }
+    }
   }
   a {
     @include prefix(transition,all 500ms, moz webkit o ms);
