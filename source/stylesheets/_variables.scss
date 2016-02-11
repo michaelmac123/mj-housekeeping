@@ -16,8 +16,10 @@ $tan:       #8C8780;
 $brand-red:  #9a253f;
 $brand-blue: #003366;
 
+$light-green:#85bd0d;
+
 // Color pairs for standard colors.
-$colors: "brand-red" $brand-red, "charcoal" $charcoal, "white" $white, "light-blue" $light-blue, "med-blue" $med-blue, "dark-blue" $dark-blue, "bone" $bone, "khaki" $khaki, "tan" $tan;
+$colors: "brand-red" "$brand-red", "charcoal" $charcoal, "white" $white, "light-blue" $light-blue, "med-blue" $med-blue, "dark-blue" $dark-blue, "bone" $bone, "khaki" $khaki, "tan" $tan;
 @each $color in $colors {
   $key:   nth(unquote($color), 1);
   $value: nth($color, 2);
@@ -35,17 +37,3 @@ $breakpoints: (
   'medium-max': ( max-width:  1199px ),
   'large':  ( min-width: 1200px )
 ) !global;
-
-
-//Fonts
-$sansFontFamily:    "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
-$serifFontFamily:   "Josefin Slab", "Times New Roman", Times, serif;
-$maven-pro:         "Maven Pro", $serifFontFamily;
-
-$upper-class:   $sansFontFamily;
-$dress-class:   $maven-pro;
-$work-class:    $sansFontFamily;
-
-.upper-class {  font-family:  $upper-class; line-height:110%; } // weird line-height
-.dress-class {  font-family:  $dress-class; }
-.work-class  {  font-family:  $work-class;  }

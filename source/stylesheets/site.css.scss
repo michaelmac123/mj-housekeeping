@@ -5,6 +5,19 @@
 @import "mixins";
 @import "buttons";
 
+//Fonts
+$sansFontFamily:    "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$serifFontFamily:   "Josefin Slab", "Times New Roman", Times, serif;
+$maven-pro:         "Maven Pro", $serifFontFamily;
+
+$upper-class:   $sansFontFamily;
+$dress-class:   $maven-pro;
+$work-class:    $sansFontFamily;
+
+.upper-class {  font-family:  $upper-class; line-height:110%; } // weird line-height
+.dress-class {  font-family:  $dress-class; }
+.work-class  {  font-family:  $work-class;  }
+
 // Resets
 body,
 html {
@@ -172,7 +185,7 @@ p {
       weight: bold; }
   }
   &-tiles {
-    @include prefix(border-radius, 1px, moz webkit o ms);
+    @include prefix(border-radius, 2px, moz webkit o ms);
     border: 1px solid $light-gray;
     &.join-our-team {
       border: 3px solid rgba($brand-blue, 0.5);
@@ -219,6 +232,18 @@ p {
       font-size: 1.75em;
       position: relative;
       top: -7px;
+    }
+  }
+  &-experience-ico {
+    vertical-align: sub;
+    height: 70px;
+    left: 15px;
+    position: relative;
+    width: 70px !important;
+    svg {
+      fill: $brand-blue;
+      height: 70px;
+      width: 70px;
     }
   }
   &-callout {

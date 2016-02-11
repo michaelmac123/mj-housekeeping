@@ -1,3 +1,5 @@
+activate :directory_indexes
+
 ###
 # Page options, layouts, aliases and proxies
 ###
@@ -10,7 +12,7 @@ page '/*.json', layout: false
 page '/*.txt', layout: false
 
 # With alternative layout
-# page "/path/to/file.html", layout: :otherlayout
+page '/index_alt.html', layout: 'layout_alt'
 
 # Proxy pages (http://middlemanapp.com/basics/dynamic-pages/)
 # proxy "/this-page-has-no-template.html", "/template-file.html", locals: {

@@ -1,0 +1,90 @@
+!!! 5
+/[if lt IE 7]   <html class="no-js lt-ie10 lt-ie9 lt-ie8 lt-ie7" lang="en-us">
+/[if IE 7]      <html class="no-js lt-ie10 lt-ie9 lt-ie8" lang="en-us">
+/[if IE 8]      <html class="no-js lt-ie10 lt-ie9" lang="en-us">
+/[if IE 9]      <html class="no-js lt-ie10 lt-ie9" lang="en-us">
+/[if lt IE 10]  <html class="no-js lt-ie10" lang="en-us">
+/[if !IE]>
+%html{lang: 'en', class: 'no-js'}
+  /<![endif]
+  %head
+    %meta(http-equiv="content-type" content="text/html" charset="utf-8")
+    %title= locals[:name].blank? ? "MJ Housekeeping | Welcome" : "MJ Housekeeping | #{locals[:name]}"
+    %meta(http-equiv="x-ua-compatible" content="ie=edge,chrome=1")
+    %meta(name="description" content="")
+    %meta(name="author" content="")
+
+    -# Standard viewport tag to set the viewport to the device's width,
+    -# Android 2.3 devices need this so 100% width works properly and
+    -# doesn't allow children to blow up the viewport width
+    %meta{content: "initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width", name: "viewport"}
+
+    -# Fix for iPhone 5 fullscreen web apps
+    %meta(name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1" media="(device-height: 568px)")
+    %meta(name='apple-mobile-web-app-capable' content='yes')
+    %meta(name='apple-mobile-web-app-status-bar-style' content='black-translucent')
+
+    -# App Icons
+    %link(rel="shortcut icon" href="/images/favicon.png")
+
+    %link{ href: "/images/favicons/apple-icon-57x57.png", rel: "apple-touch-icon", sizes: "57x57"}
+    %link{ href: "/images/favicons/apple-icon-60x60.png", rel: "apple-touch-icon", sizes: "60x60"}
+    %link{ href: "/images/favicons/apple-icon-72x72.png", rel: "apple-touch-icon", sizes: "72x72"}
+    %link{ href: "/images/favicons/apple-icon-76x76.png", rel: "apple-touch-icon", sizes: "76x76"}
+    %link{ href: "/images/favicons/apple-icon-114x114.png", rel: "apple-touch-icon", sizes: "114x114"}
+    %link{ href: "/images/favicons/apple-icon-120x120.png", rel: "apple-touch-icon", sizes: "120x120"}
+    %link{ href: "/images/favicons/apple-icon-144x144.png", rel: "apple-touch-icon", sizes: "144x144"}
+    %link{ href: "/images/favicons/apple-icon-152x152.png", rel: "apple-touch-icon", sizes: "152x152"}
+    %link{ href: "/images/favicons/apple-icon-180x180.png", rel: "apple-touch-icon", sizes: "180x180"}
+    %link{ href: "/images/favicons/android-icon-192x192.png", rel: "icon", sizes: "192x192", type: "image/png"}
+    %link{ href: "/images/favicons/favicon-32x32.png", rel: "icon", sizes: "32x32", type: "image/png"}
+    %link{ href: "/images/favicons/favicon-96x96.png", rel: "icon", sizes: "96x96", type: "image/png"}
+    %link{ href: "/images/favicons/favicon-16x16.png", rel: "icon", sizes: "16x16", type: "image/png"}
+    %link{ href: "/images/favicons/manifest.json", rel: "manifest"}
+    %meta{ content: "#ffffff", name: "msapplication-TileColor"}
+    %meta{ content: "/ms-icon-144x144.png", name: "msapplication-TileImage"}
+    %meta{ content: "#ffffff", name: "theme-color"}
+
+    -# Javascripts
+    = javascript_include_tag "//code.jquery.com/jquery-1.11.2.min.js"
+    = javascript_include_tag "//ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"
+
+    = javascript_include_tag "//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"
+    = javascript_include_tag "//cdn.jsdelivr.net/headroomjs/0.5.0/headroom.min.js"
+    %script{src: "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js", integrity: "sha256-KXn5puMvxCw+dAYznun+drMdG1IFl3agK0p/pqT9KAo= sha512-2e8qq0ETcfWRI4HJBzQiA3UoyFk6tbNyG+qSaIBZLyW9Xf3sWZHN/lxe9fTh1U45DpPf07yj94KsUHHWe4Yk1A==", crossorigin: "anonymous"}
+    = javascript_include_tag :all
+
+    -# Fonts
+    %link{ href: '//fonts.googleapis.com/css?family=Lato:300,400', rel: 'stylesheet', type: 'text/css'}
+    %link{href: "https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css", rel: "stylesheet", integrity: "sha256-3dkvEK0WLHRJ7/Csr0BZjAWxERc5WH7bdeUya2aXxdU= sha512-+L4yy6FRcDGbXJ9mPG8MT/3UCDzwR9gPeyFNMCtInsol++5m3bk2bXWKdZjvybmohrAsn3Ua5x8gfLnbE1YkOg==", crossorigin: "anonymous"}
+
+    -# Stylesheets
+    %link{href: "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css", rel: "stylesheet", integrity: "sha256-7s5uDGW3AHqw6xtJmNNtr+OBRJUlgkNJEo78P4b0yRw= sha512-nNo+yCHEyn0smMxSswnf/OnX6/KwJuZTlNZBjauKhTK0c+zT+q5JOCx0UFhXQ6rJR9jg6Es8gPuD2uZcYDLqSw==", crossorigin: "anonymous"}
+    = stylesheet_link_tag :site_alt, media: 'all'
+
+  %body{class: page_classes || 'page'}
+    %nav.navbar
+      .container
+        .row
+          .col-md-7
+            .navbar-header
+              %button.navbar-toggle.collapsed{"aria-controls" => "navbar", "aria-expanded" => "false", "data-target" => "#navbar", "data-toggle" => "collapse", :type => "button"}
+                %span.sr-only Toggle navigation
+                %span.icon-bar
+                %span.icon-bar
+                %span.icon-bar
+              %a{ href: "#", class: "navbar-brand" }
+                %span.logo-ico= image_tag "images/hero/mjs-housekeeping-orig-logo.png", class: 'navbar-brand-img'
+                %span.logo-text
+                  %span Housekeeping
+                  %span Taking care of people is what we love to do!
+          .col-md-5
+            #navbar.navbar-collapse.collapse
+              %ul.nav.navbar-nav
+                %li= link_to 'Rates & Services', "#"
+                %li= link_to 'Get a Quote', "#"
+                %li= link_to 'FAQ’s', "#"
+                %li= link_to 'Join Our Team', "#"
+
+    = yield
+    = partial "layouts/footer"

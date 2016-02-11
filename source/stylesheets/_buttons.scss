@@ -70,3 +70,14 @@
     background: lighten($gray, 8);
     border-color: lighten($gray, 8);
     color:      $white; } }
+.btn.btn-light-green{
+  @include prefix(transition,all 500ms, moz webkit o ms);
+  $primary:     $light-green;
+  background:   $primary;
+  border-color: lighten($primary, 20);
+  color:        $white;
+  &:hover {
+    @include prefix(transition,all 500ms, moz webkit o ms);
+    background: lighten($gray, 8);
+    border-color: lighten($gray, 8);
+    color:      $white; } }
