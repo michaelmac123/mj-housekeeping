@@ -78,13 +78,12 @@
                 %span.logo-text
                   %span Housekeeping
                   %span Taking care of people is what we love to do!
-          .col-md-5
-            #navbar.navbar-collapse.collapse
-              %ul.nav.navbar-nav
-                %li= link_to 'Rates & Services', "/page_alt.html"
-                %li= link_to 'Get a Quote', "#"
-                %li= link_to 'FAQ’s', "#"
-                %li= link_to 'Join Our Team', "#"
+          .col-md-5#navbar.navbar-collapse.collapse
+            %ul.nav.navbar-nav
+              %li= link_to 'Rates & Services', "/page_alt.html"
+              %li= link_to 'Get a Quote', "#"
+              %li= link_to 'FAQ’s', "#"
+              %li= link_to 'Join Our Team', "#"
 
     = yield
     = partial "layouts/footer"

@@ -158,8 +158,13 @@ p {
       repeat: no-repeat;
       position: 80% bottom;
       size: auto 80%; }
-    min-height: 10px;
-    height: 400px;
+    min-height: 400px;
+    @include respond-to('small') {
+      background:{
+        position: left bottom;
+        size: 130%; }
+      min-height: 100px;
+    }
   }
   &-intro-title {
     font-size: 1.85em !important;
@@ -168,6 +173,11 @@ p {
     border-bottom: 1px solid $brand-red;
     margin-bottom: 25px;
     padding: 5px 10px 20px 10px;
+  }
+  &-intro-text {
+    @include respond-to('small') {
+      background-color: rgba($white, 0.8);
+    }
   }
 }
 

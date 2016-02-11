@@ -87,7 +87,12 @@ p {
     top: 65px;
     padding: 0;
     position: relative;
+    @include respond-to('small') {
+      float: none;
+      padding: inherit;
+      top: 0;
 
+    }
   }
   &-brand {
     color: $black;
