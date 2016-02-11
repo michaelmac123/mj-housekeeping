@@ -151,6 +151,24 @@ p {
       }
     }
   }
+  &.interior-pages {
+    background:{
+      image: url("../images/hero/mjs-housekeeping-hero-banner-1.jpg");
+      color: #FAFAFA;
+      repeat: no-repeat;
+      position: 80% bottom;
+      size: auto 80%; }
+    min-height: 10px;
+    height: 400px;
+  }
+  &-intro-title {
+    font-size: 1.85em !important;
+  }
+  &-intro-list {
+    border-bottom: 1px solid $brand-red;
+    margin-bottom: 25px;
+    padding: 5px 10px 20px 10px;
+  }
 }
 
 .content-section {
