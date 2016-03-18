@@ -527,6 +527,25 @@ hr.thick {
       }
     }
   }
+    &-testimonial-sub {
+    color: $brand-red;
+    display: block;
+    span{
+      display: block;
+      &:first-of-type {
+        font:{
+          size: 1.5em;
+          style: italic; }
+        text-align: left;
+      }
+      &:last-of-type {
+        font-weight: bold;
+        text-align: right;
+        width: 80%;
+      }
+    }
+  }
+
   &-b {
     &-intro-text {
       text-align: left;
@@ -689,7 +708,16 @@ hr.thick {
   &-title {
     @include font-size(2);
   }
+  &-subtitle {
+    @include font-size(1.5);
+    color: $electic-blue;
+  }
 }
+
+.col-margin-md-0 {
+  margin-bottom: 0;
+}
+
 // Footer
 .footer {
   background-color: lighten($light-gray, 5);
