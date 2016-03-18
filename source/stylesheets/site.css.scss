@@ -698,6 +698,13 @@ hr.thick {
       margin-top: 0;
       padding: 10px;
     }
+    &.join-our-team {
+      border-color: $light-green;
+      margin-top: 40px;
+      h4 {
+        background-color: $light-green;
+      }
+    }
   }
   &-form {
     padding: 20px;
@@ -717,7 +724,53 @@ hr.thick {
 .col-margin-md-0 {
   margin-bottom: 0;
 }
-
+.step {
+  position: relative;
+  .circle{
+    @include prefix(border-radius, 50%, o ms moz webkit);
+    background-color: $light-green;
+    border: 1px solid $light-green;
+    display: inline-block;
+    height: 100px;
+    margin: 15px auto;
+    position: relative;
+    vertical-align: middle;
+    width: 100px;
+    z-index: 3;
+    span {
+      @include font-size(5.5);
+      display:inline-block;
+      color: $white;
+      vertical-align: middle;
+    }
+  }
+  &-label {
+    @include font-size(1.25);
+    color: $light-green;
+  }
+  &.next {
+    .circle {
+      background-color: $white;
+      border-color: $light-green;
+      span {
+        color: $light-gray;
+      }
+    }
+    .step-label,
+    .step-title {
+      color: $light-gray;
+    }
+  }
+}
+.bar {
+  background-color: $light-gray;
+  height: 10px;
+  left: 50%;
+  position: absolute;
+  top: 62px;
+  width: 100%;
+  z-index: 1;
+}
 // Footer
 .footer {
   background-color: lighten($light-gray, 5);
