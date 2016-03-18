@@ -699,11 +699,7 @@ hr.thick {
       padding: 10px;
     }
     &.join-our-team {
-      border-color: $light-green;
       margin-top: 40px;
-      h4 {
-        background-color: $light-green;
-      }
     }
   }
   &-form {
@@ -728,8 +724,8 @@ hr.thick {
   position: relative;
   .circle{
     @include prefix(border-radius, 50%, o ms moz webkit);
-    background-color: $light-green;
-    border: 1px solid $light-green;
+    background-color: $electic-blue;
+    border: 2px solid $electic-blue;
     display: inline-block;
     height: 100px;
     margin: 15px auto;
@@ -746,12 +742,12 @@ hr.thick {
   }
   &-label {
     @include font-size(1.25);
-    color: $light-green;
+    color: $electic-blue;
   }
   &.next {
     .circle {
       background-color: $white;
-      border-color: $light-green;
+      border-color: $light-gray;
       span {
         color: $light-gray;
       }
