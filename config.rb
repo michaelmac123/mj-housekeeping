@@ -12,10 +12,10 @@ page '/*.json', layout: false
 page '/*.txt', layout: false
 
 # With alternative layout
-page '/index_alt.html', layout: 'layout_alt'
-page '/page_alt.html', layout: 'layout_alt'
 
-page '/page.html', layout: 'layout'
+%w[about rates-services FAQ].each do |page|
+  page '/#{page}.html', layout: 'layout'
+end
 
 # Proxy pages (http://middlemanapp.com/basics/dynamic-pages/)
 # proxy "/this-page-has-no-template.html", "/template-file.html", locals: {

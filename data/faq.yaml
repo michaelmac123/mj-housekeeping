@@ -1,0 +1,48 @@
+- faq:
+  id: 1
+  title: "What types of payments do your housekeepers accept?"
+  body: "The housekeepers are paid at the time of service. Preferable payment is a personal check, cash, Visa or MasterCard."
+- faq:
+  id: 2
+  title: "Will I have the same housekeeper every time?"
+  body: "Yes. Once you are happy with the housekeeper referred to you, as long as they are accepting referrals you can expect to see them every time."
+- faq:
+  id: 3
+  title: "Can I have the same day and time every time?"
+  body: "Yes. We will work with you and your preferred housekeeper to reach an agreement on an optimal schedule for both of you."
+- faq:
+  id: 4
+  title: "Are you flexible with day and times?"
+  body: "We prefer you set a regular day and time for your service, however, flexibility is available for special occasions."
+- faq:
+  id: 5
+  title: "What is your cancellation policy? "
+  body: "Contact us at least 48hrs+ prior to your scheduled day and time. Let us know if you are skipping service all together or wish to reschedule. Our housekeepers rely on scheduled service to pay the bills. The sooner we know you wish to cancel the easier it will be to provide the housekeeper with a fill-in client to replace that income."
+- faq:
+  id: 6
+  title: "Do I have to be home when they are cleaning?"
+  body: "No. Once you are comfortable with your housekeeper you can make arrangements with them for accessing your home during scheduled service when you are gone."
+- faq:
+  id: 7
+  title: "How does the housekeeper get in if I'm not at home for the first service? "
+  body: "When you and the housekeeper get acquainted you can call the evening prior to your service, and agree on a place you will leave a key."
+- faq:
+  id: 8
+  title: "Do I provide the supplies or do housekeepers bring their own ? "
+  body: "The housekeepers will use your supplies. It cuts down on cost and is optimal for clients with specific types of allergies, sensitivities and surfaces. They use what you would use to clean your home."
+- faq:
+  id: 9
+  title: "What supplies should I have available? "
+  body: "Recommended supplies to have available are:"
+  body_points:
+    - A vacuum that is in good repair, attachments, extra belts and bags and the vacuum instruction manual
+    - A light weight portable vacuum for the stairs and the 2nd floor
+    - Broom, dust mop and wet mop with plastic bucket
+    - Lots of lint free, absorbent cleaning cloths such as Micro Fiber towels or old baby diapers
+    - Paper towels, scrubby sponges and Magic Erasers
+    - An extender duster (for ceiling cobwebs)
+    - Plastic trash bags and a laundry basket
+- faq:
+  id: 10
+  title: "Can I change housekeepers if I am not happy with the one you referred?"
+  body: "Yes. Each client's home and needs are different. Our challenge is to refer a housekeeper that matches your expectations, and that you are happy to have return on an ongoing basis."

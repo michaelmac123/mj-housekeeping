@@ -14,6 +14,13 @@
   -webkit-font-smoothing:   $webkit;
   -moz-osx-font-smoothing:  $moz; }
 
+@mixin font-size($sizeValue: 1.6) {
+  font-size: ($sizeValue * 10) + px;
+  font-size: $sizeValue + rem;
+  line-height: ($sizeValue * 10) + px;
+  line-height: $sizeValue + rem;
+}
+
 @mixin prefix($property, $value, $prefixes: ()) {
   @each $prefix in $prefixes {
     #{'-' + $prefix + '-' + $property}: $value; }

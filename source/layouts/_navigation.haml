@@ -1,23 +1,24 @@
 %nav.navbar
   .container
-    .navbar-header
-      %button.navbar-toggle.collapsed{"aria-controls" => "navbar", "aria-expanded" => "false", "data-target" => "#navbar", "data-toggle" => "collapse", :type => "button"}
-        %span.sr-only Toggle navigation
-        %span.icon-bar
-        %span.icon-bar
-        %span.icon-bar
-    #navbar.navbar-collapse.collapse
-      .nav.navbar-nav
-        .navbar-nav-left-column
-          .navbar-nav-left-content
-            = link_to 'Rates & Services', "/page.html"
-          .navbar-nav-left-content
-            = link_to 'Get a Quote', "#"
-        .navbar-nav-logo-content
-          %a.logo-link{href: '/'}= inline_svg('mjs-housekeeping-orig-logo', class: "navbar-nav-ico")
-
-        .navbar-nav-right-column
-          .navbar-nav-right-content
-            = link_to 'FAQ’s', "#"
-          .navbar-nav-right-content
-            = link_to 'Join Our Team', "#"
+    .row
+      .col-md-6
+        .navbar-header
+          %button.navbar-toggle.collapsed{"aria-controls" => "navbar", "aria-expanded" => "false", "data-target" => "#navbar", "data-toggle" => "collapse", :type => "button"}
+            %span.sr-only Toggle navigation
+            %span.icon-bar
+            %span.icon-bar
+            %span.icon-bar
+          %a{ href: "/", class: "navbar-brand" }
+            %span.logo-ico= image_tag "images/hero/mjs-housekeeping-orig-logo.png", class: 'navbar-brand-img'
+            %span.logo-text
+              %span Housekeeping
+              %span Taking care of people is what we love to do!
+      .col-md-5#navbar.navbar-collapse.collapse.pull-right
+        %ul.nav.navbar-nav
+          %li= link_to 'Rates & Services', "/rates-services.html"
+          %li= link_to 'Get a Quote', "/get-quote.html"
+          %li= link_to 'FAQ’s', "FAQ.html"
+          %li= link_to 'About Us', "about.html"
+          %li><
+            %a{ href: '#', class: 'facebook-ico' }
+              %i.fa.fa-facebook-official.fa-lg

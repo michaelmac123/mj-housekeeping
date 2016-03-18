@@ -63,5 +63,6 @@
     = stylesheet_link_tag :site, media: 'all'
 
   %body{class: page_classes || 'page'}
+    = partial "layouts/navigation"
     = yield
     = partial "layouts/footer"
