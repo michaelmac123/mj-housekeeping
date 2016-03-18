@@ -13,7 +13,7 @@ page '/*.txt', layout: false
 
 # With alternative layout
 
-%w[about rates-services FAQ].each do |page|
+%w[about rates-services FAQ policies-terms join-our-team get-quote].each do |page|
   page '/#{page}.html', layout: 'layout'
 end
 
