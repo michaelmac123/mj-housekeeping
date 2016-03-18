@@ -165,11 +165,11 @@ hr.thick {
     }
   }
   a {
-    @include prefix(transition,all 500ms, moz webkit o ms);
+    @include prefix(transition,background-color color 500ms, moz webkit o ms);
     color: $light-green;
     padding:  5px 15px !important;
     &:hover {
-      @include prefix(transition,all 500ms, moz webkit o ms);
+      @include prefix(transition,background-color color 500ms, moz webkit o ms);
       background-color: rgba($light-green, 0.15);
       color: lighten($black, 5);
       text-decoration: none; }
@@ -530,9 +530,20 @@ hr.thick {
   &-b {
     &-intro-text {
       text-align: left;
+      &.heading {
+        @include font-size(1.25);
+        color: $med-blue;
+        font-weight: bold;
+        margin:{
+          bottom: 0;
+          top: 20px; }
+      }
     }
     &-intro-img img{
       width: 100%;
+    }
+    &-intro-text-list {
+      text-align: left;
     }
   }
 }
@@ -593,6 +604,26 @@ hr.thick {
   }
 }
 
+.pp-accordion {
+  .panel-title {
+    padding: 0;
+  }
+  .panel {
+    @include prefix(box-shadow, 0 0 0 transparent, o ms moz webkit);
+  }
+  .panel-default {
+    border: none;
+    & > .panel-heading {
+      background-color: $white;
+      border:none;
+      padding: 0;
+    }
+  }
+  .panel-body {
+    border-top: none !important;
+    padding: 0;
+  }
+}
 .feature {
   &-wrapper {
     padding-bottom: 10px;
