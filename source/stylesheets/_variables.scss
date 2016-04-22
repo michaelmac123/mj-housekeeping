@@ -36,9 +36,9 @@ $colors: "brand-red" "$brand-red", "charcoal" $charcoal, "white" $white, "light-
 
 // Breakpoints
 $breakpoints: (
-  'x-small':( max-width:  767px ),
+  'x-small':( max-width:  420px ), //iphone6 plus portrait size
   'small':  ( max-width:  768px ),
-  'medium': ( max-width:  979px ),
+  'medium': ( max-width:  992px ),
   'medium-max': ( max-width:  1199px ),
   'large':  ( min-width: 1200px )
 ) !global;

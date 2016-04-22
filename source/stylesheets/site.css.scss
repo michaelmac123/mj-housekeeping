@@ -58,8 +58,13 @@ p {
     family: $work-class;
     weight: normal; } }
 
-hr.thick {
-  border-top: 5px solid $light-green;
+hr{
+  &.thick {
+    border-top: 5px solid $light-green;
+  }
+  &.tight {
+    margin: 5px 0;
+  }
 }
 
 .block {
@@ -348,7 +353,7 @@ hr.thick {
       family: $script;
       size: 2.25em !important; }
     position: relative;
-    right: 15%;
+    right: 55%;
     text-align: right;
     top: 45%;
     span:nth-of-type(2) {
@@ -369,10 +374,30 @@ hr.thick {
         bottom: 5px solid $light-green;
       }
       margin: 30px 0;
-      padding: 20px 0;
+      padding:{
+       top: 20px;
+       bottom: 20px; }
       @include respond-to('small') {
         margin: 5px 0 20px 0;
-        padding: 5px 0;
+        padding:{
+          top: 5px;
+          bottom: 5px; }
+      }
+      &.img-box {
+        margin-top: 0;
+        padding-bottom: 0;
+      }
+    }
+    &-img-title {
+      @include font-size(2);
+      color: $electic-blue;
+      margin-top: 15%;
+      text-align: left;
+      @include respond-to('small') {
+        border-top: 5px solid $light-green;
+        margin: 0 10px;
+        padding-top: 20px;
+        text-align: center;
       }
     }
     &-intro-title {
@@ -401,8 +426,12 @@ hr.thick {
     }
     &-intro-text {
       border-left: 1px solid $light-gray;
-      text-align: left;
+      margin-top: 10px;
       padding: 20px 60px;
+      text-align: left;
+      &.img-text {
+        @include font-size(1.2);
+      }
       @include respond-to('small') {
         padding: 10px;  }
     }
@@ -423,7 +452,15 @@ hr.thick {
     &.join-our-team {
       border: 3px solid rgba($brand-blue, 0.5);
       color: $brand-blue;
-      margin-top: 40px;
+      margin-top: 70px;
+      @include respond-to('small') {
+        margin:{
+          top: 5px;
+          right: 15px;
+          bottom: 5px;
+          left: 15px;
+        }
+      }
     }
   }
   &-tiles-3 {
@@ -437,6 +474,7 @@ hr.thick {
     margin:{
       left: 10px;
       right: 10px; }
+    min-height: 295px;
     padding: 10px;
     width: calc((100% / 3) - 20px);
     &:hover {
@@ -556,6 +594,23 @@ hr.thick {
         margin:{
           bottom: 0;
           top: 20px; }
+      }
+      &.img-text {
+        @include font-size(1.2);
+        line-height: 150%;
+        padding: 0 10px;
+      }
+    }
+    &-img-title {
+      @include font-size(2);
+      color: $electic-blue;
+      margin-top: 20%;
+      text-align: left;
+      @include respond-to('small') {
+        border-top: 5px solid $light-green;
+        margin-top: 0;
+        padding-top: 20px;
+        text-align: center;
       }
     }
     &-intro-img img{
@@ -698,15 +753,11 @@ hr.thick {
       margin-top: 0;
       padding: 10px;
     }
-    &.join-our-team {
-      margin-top: 40px;
-    }
   }
   &-form {
     padding: 20px;
   }
 }
-
 .testimonials {
   &-title {
     @include font-size(2);
@@ -717,8 +768,14 @@ hr.thick {
   }
 }
 
-.col-margin-md-0 {
+.col-md-margin-bottom-0 {
   margin-bottom: 0;
+}
+.col-md-margin-top-0 {
+  margin-top: 0;
+}
+.col-md-margin-bottom-15 {
+  margin-bottom: 15px;
 }
 .step {
   position: relative;
@@ -773,14 +830,22 @@ hr.thick {
   border-top: 1px solid lighten($light-gray, 2);
   margin-top: 20px;
   min-height: 75px;
-  p {
-    font-size: 0.8em;
+  &-copyright {
+    @include font-size(.8);
+    color: lighten(#777, 20);
     padding: 5px 0 10px 0;
+  }
+  &-title {
+    @include font-size(1.5);
+    border-bottom: 1px solid $light-gray;
+    color: #777;
+    margin: 0 15% 10px 15%;
+    padding: 10px 0 10px 0;
   }
   &-navbar {
     display: inline-block;
     list-style:none;
-    margin: 10px 0 0 0;
+    margin: 0;
     padding: 0;
     vertical-align: middle;
     li {

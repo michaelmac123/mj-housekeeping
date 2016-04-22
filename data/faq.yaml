@@ -1,48 +1,57 @@
 - faq:
   id: 1
   title: "What types of payments do your housekeepers accept?"
-  body: "The housekeepers are paid at the time of service. Preferable payment is a personal check, cash, Visa or MasterCard."
+  body: "Payment is due upon service. Housekeepers can collect personal checks/cash from you directly, and we can take your Visa or MasterCard info over the phone when you book your service."
 - faq:
   id: 2
   title: "Will I have the same housekeeper every time?"
-  body: "Yes. Once you are happy with the housekeeper referred to you, as long as they are accepting referrals you can expect to see them every time."
+  body: "Yes. If you are happy with the housekeeper referred to you, you can expect them on the scheduled day/time agreed upon. In the event that your housekeeper is not available for any reason, we will try to provide a substitute to you."
 - faq:
   id: 3
   title: "Can I have the same day and time every time?"
   body: "Yes. We will work with you and your preferred housekeeper to reach an agreement on an optimal schedule for both of you."
 - faq:
   id: 4
-  title: "Are you flexible with day and times?"
-  body: "We prefer you set a regular day and time for your service, however, flexibility is available for special occasions."
+  title: "Are you licensed and do you do background checks?"
+  body: "MJ's is licensed by the State of Washington. We have posted the required bond, which assures that we are financially able to deliver the services we offer. All of MJ's independent contractors, as well as office staff, have undergone a Washington State Patrol background check. We will reimburse our clients up to $3000.00 if a housekeeper is convicted of a theft. We carry a liability insurance policy that covers any negligent act by MJ's and our staff. This policy does not cover the actions of the housekeepers, who are independent contractors and self-employed. We provide worker's compensation insurance. If they are injured while working in your home and you were not negligent, you will not be responsible for paying their medical bills or lost wages."
 - faq:
   id: 5
   title: "What is your cancellation policy? "
-  body: "Contact us at least 48hrs+ prior to your scheduled day and time. Let us know if you are skipping service all together or wish to reschedule. Our housekeepers rely on scheduled service to pay the bills. The sooner we know you wish to cancel the easier it will be to provide the housekeeper with a fill-in client to replace that income."
+  body: "Contact us at least 48hrs+ prior to your scheduled day and time. Let us know if you are skipping service altogether or wish to reschedule. Our housekeepers rely on scheduled service (regular income) to pay the bills. The sooner we know you wish to cancel the easier it will be to provide the housekeeper with a fill-in client to replace that income. That being said, we are human, and understand when immediate emergencies happen, and you will not be charged in that situation."
 - faq:
   id: 6
   title: "Do I have to be home when they are cleaning?"
-  body: "No. Once you are comfortable with your housekeeper you can make arrangements with them for accessing your home during scheduled service when you are gone."
+  body: "No. You can make arrangements directly with the housekeeper to leave a key or supply the access codes necessary. Or, once you have met or let in your housekeeper, feel free to go about your day and leave them to take care of your home, perhaps with instructions to lock up when they are finished."
 - faq:
   id: 7
-  title: "How does the housekeeper get in if I'm not at home for the first service? "
-  body: "When you and the housekeeper get acquainted you can call the evening prior to your service, and agree on a place you will leave a key."
+  title: "What types of tasks should I have the housekeeper do?"
+  body: "In addition to the basics, there are tasks in which your housekeeper may help with that most clients don't think about. Most do laundry, clean closets, drawers and cupboards, iron, provide party help and help with packing and unpacking. Others will run errands and some do light cooking.
+You can download our <a href='/images/forms/mjs_housekeeping_ideas_task_list.pdf', target='_blank'>Housekeeper Task List</a> for a sample of tasks you may want your housekeeper to perform."
 - faq:
   id: 8
   title: "Do I provide the supplies or do housekeepers bring their own ? "
-  body: "The housekeepers will use your supplies. It cuts down on cost and is optimal for clients with specific types of allergies, sensitivities and surfaces. They use what you would use to clean your home."
+  body: "The housekeepers will use your supplies. It cuts down on cost and is optimal for clients with specific types of allergies/sensitivities and provides control over specialty surfaces/appliances. They use what you would use to clean your home, and don't bring in any outside environmental materials that can factor in with other companies that bring their own supplies and equipment."
 - faq:
   id: 9
   title: "What supplies should I have available? "
   body: "Recommended supplies to have available are:"
   body_points:
-    - A vacuum that is in good repair, attachments, extra belts and bags and the vacuum instruction manual
-    - A light weight portable vacuum for the stairs and the 2nd floor
-    - Broom, dust mop and wet mop with plastic bucket
-    - Lots of lint free, absorbent cleaning cloths such as Micro Fiber towels or old baby diapers
-    - Paper towels, scrubby sponges and Magic Erasers
-    - An extender duster (for ceiling cobwebs)
+    - A vacuum that is in good repair, attachments, extra belts and bags, and the instruction manual
+    - A light-weight, portable vacuum for the stairs and the 2nd/3rd floor(s)
+    - Broom, dust mop and wet mop, with plastic bucket
+    - Lots of lint-free, absorbent cleaning cloths, such as Micro Fiber towels or baby diaper style cloths
+    - Paper towels, scrubby non-scratch sponges and Magic Erasers
+    - An extender duster/Swiffer extender duster (for ceiling cobwebs, delicate surfaces)
     - Plastic trash bags and a laundry basket
 - faq:
   id: 10
   title: "Can I change housekeepers if I am not happy with the one you referred?"
-  body: "Yes. Each client's home and needs are different. Our challenge is to refer a housekeeper that matches your expectations, and that you are happy to have return on an ongoing basis."
+  body: "Yes. Each client's home and needs are different. Our challenge and expertise is referring a housekeeper that matches your expectations, and that you are happy to have return on an ongoing basis."
+- faq:
+  id: 11
+  title: "Should I tip my housekeeper?"
+  body: "The housekeepers we work with are dependent on their regular income. They do deal with cancelations and rescheduling a bit differently than with other jobs. They are self-employed, and are at the mercy of the loss of hours from time to time, that are a result of cancelations and rescheduling. Tipping is something that can offset the loss of hours that housekeepers experience. They work very hard, and as with any other job in the service industry, they appreciate any tip that you feel they should receive. Our clientele typically tip anywhere from $5-$10.00 per service and up. Some of our clientele prefer to tip once a year, as a holiday/yearly bonus. If you would prefer not to tip, that is also your choice, and perfectly acceptable."
+- faq:
+  id: 12
+  title: "Can I leave my pets unattended in my home while my housekeeper is working?"
+  body: "We do ask, for everyone's sake, that you secure your pets while your housekeeper is working. We want to protect your pet, and make them comfortable having someone in their home. We also want to protect them, as well as your housekeeper, from possibly injury – pets sometimes get startled and can, and have, suddenly run in front of a housekeeper and caused them to trip, fall and hurt themselves. Of course, there are exceptions to every rule: some pets are elderly, or honestly require no securing. We ask that you use your best judgement and keep these things in mind."
