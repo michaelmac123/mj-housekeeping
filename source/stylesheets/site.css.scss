@@ -852,17 +852,24 @@ hr{
 }
 
 form.wufoo {
-  @include prefix(border-radius, 3px o ms moz webkit);
+  @include prefix(border-radius, 3px, o ms moz webkit);
   border: 1px solid $electic-blue;
 }
 
 .noI {
   form li{
     &.buttons {
+      margin-bottom: 0px !important;
       text-align: center;
     }
     &#fo1li14 span {
       margin-right: 1em;
+    }
+    &#fo1li6 div {
+      textarea.textarea {
+        min-width: 0;
+        width: 95%;
+      }
     }
   }
 }
