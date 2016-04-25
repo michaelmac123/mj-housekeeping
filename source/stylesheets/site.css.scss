@@ -771,6 +771,103 @@ hr{
     padding: 20px;
   }
 }
+
+////////// Wufoo Overrides //////////
+
+.wufoo .info {
+  border-bottom: none;
+  padding: 0;
+  h2 {
+    @include font-size(2);
+    background-color: $electic-blue;
+    color: $white;
+    font-family: $sansFontFamily;
+    margin-top: 0;
+    padding: 10px;
+  }
+  fieldset {
+    border: none;
+    padding: 0;
+  }
+  label.desc,
+  legend.desc {
+    @include float;
+    padding-right: 10px;
+    text-align: right;
+    width: 40%;
+  }
+
+  input.text,
+  textarea.textarea,
+  input.file,
+  select.select
+   {
+    @include prefix( box-shadow, inset 0 1px 1px rgba(0,0,0, 0.075), o ms moz webkit);
+    @include prefix( box-radius, 3px, o ms moz webkit);
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    color: #555;
+    display: block;
+    font-family: inherit;
+    font-size: 14px;
+    height: 15px;
+    line-height: 1.42857143;
+    padding: 6px 12px;
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+  }
+  form li.buttons {
+    text-align: center;
+  }
+  input.btTxt {
+    $primary: $brand-blue;
+    @include prefix( border-radius, 4px, o ms moz webkit );
+    @include prefix( transition, all 500ms, o ms moz webkit );
+    @include prefix( user-select, none, ms moz webkit );
+    @include font-size(2.5);
+    background: $primary;
+    border:{
+      color: lighten($med-blue, 20);
+      style:  solid;
+      width: 1px; }
+    color: $white;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 400;
+    margin-bottom: 0;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    &:hover {
+      @include prefix(transition,all 500ms, moz webkit o ms);
+      background: lighten($primary, 15);
+      border-color: lighten($primary, 15);
+      color:      $white; }
+  }
+  form li#fo1li14 span {
+    margin-right: 1em;
+  }
+
+  form li#fo1li14 div {
+    float: right;
+    width: 58%;
+    textarea.textarea {
+      width: 100%;
+    }
+  }
+
+}
+
+
+
+
+////////// Wufoo Overrides //////////
+
+
 .testimonials {
   &-title {
     @include font-size(2);
@@ -837,14 +934,6 @@ hr{
   width: 100%;
   z-index: 1;
 }
-
-////////// Wufoo Overrides //////////
-
-.wufoo .info {
-  border-bottom: none;
-}
-
-////////// Wufoo Overrides //////////
 
 // Footer
 .footer {
