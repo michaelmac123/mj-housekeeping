@@ -794,7 +794,10 @@ hr{
   label.desc,
   legend.desc {
     @include float;
-    padding-right: 10px;
+    padding:{
+      top: 5px;
+      right: 10px;
+    }
     text-align: right;
     width: 40%;
   }
@@ -813,14 +816,16 @@ hr{
     display: block;
     font-family: inherit;
     font-size: 14px;
-    height: 15px;
+    height: 20px;
     line-height: 1.42857143;
     padding: 6px 12px;
     -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
     -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
     transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
   }
-
+  select.select {
+    height: 34px;
+  }
   textarea.textarea {
     height: 5.5em;
     width: 100%;
@@ -864,7 +869,7 @@ hr{
     &#fo1li14 span {
       margin-right: 1em;
     }
-    &#fo1li14 div {
+    &#fo1li6 div {
       float: right;
       width: 58%;
       textarea.textarea {
