@@ -837,6 +837,15 @@ hr{
   width: 100%;
   z-index: 1;
 }
+
+////////// Wufoo Overrides //////////
+
+.wufoo .info {
+  border-bottom: none;
+}
+
+////////// Wufoo Overrides //////////
+
 // Footer
 .footer {
   background-color: lighten($light-gray, 5);
