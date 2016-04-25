@@ -805,7 +805,7 @@ hr{
   select.select
    {
     @include prefix( box-shadow, inset 0 1px 1px rgba(0,0,0, 0.075), o ms moz webkit);
-    @include prefix( box-radius, 3px, o ms moz webkit);
+    @include prefix( border-radius, 3px, o ms moz webkit);
     background-color: #fff;
     background-image: none;
     border: 1px solid #ccc;
@@ -820,15 +820,18 @@ hr{
     -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
     transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
   }
-  form li.buttons {
-    text-align: center;
+
+  textarea.textarea {
+    height: 5.5em;
+    width: 100%;
   }
+
   input.btTxt {
     $primary: $brand-blue;
     @include prefix( border-radius, 4px, o ms moz webkit );
     @include prefix( transition, all 500ms, o ms moz webkit );
     @include prefix( user-select, none, ms moz webkit );
-    @include font-size(2.5);
+    @include font-size(1.75);
     background: $primary;
     border:{
       color: lighten($med-blue, 20);
@@ -839,6 +842,7 @@ hr{
     display: inline-block;
     font-weight: 400;
     margin-bottom: 0;
+    padding: 6px 16px;
     text-align: center;
     white-space: nowrap;
     vertical-align: middle;
@@ -850,21 +854,25 @@ hr{
       border-color: lighten($primary, 15);
       color:      $white; }
   }
-  form li#fo1li14 span {
-    margin-right: 1em;
-  }
+}
 
-  form li#fo1li14 div {
-    float: right;
-    width: 58%;
-    textarea.textarea {
-      width: 100%;
+.noI {
+  form li{
+    &.buttons {
+      text-align: center;
+    }
+    &#fo1li14 span {
+      margin-right: 1em;
+    }
+    &#fo1li14 div {
+      float: right;
+      width: 58%;
+      textarea.textarea {
+        width: 100%;
+      }
     }
   }
 }
-
-
-
 
 
 ////////// Wufoo Overrides //////////
