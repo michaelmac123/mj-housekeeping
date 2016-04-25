@@ -10,6 +10,7 @@
     background: lighten($gray, 8);
     border-color: lighten($gray, 8);
     color:      $white; } }
+
 .btn.btn-dark-blue{
   @include prefix(transition,all 500ms, moz webkit o ms);
   $primary:     $dark-blue;
@@ -18,8 +19,8 @@
   color:        $white;
   &:hover {
     @include prefix(transition,all 500ms, moz webkit o ms);
-    background: lighten($gray, 8);
-    border-color: lighten($gray, 8);
+    background: lighten($primary, 8);
+    border-color: lighten($primary, 8);
     color:      $white; } }
 
 .btn.btn-med-blue {
@@ -30,8 +31,8 @@
   color:        $white;
   &:hover {
     @include prefix(transition,all 500ms, moz webkit o ms);
-    background: lighten($gray, 8);
-    border-color: lighten($gray, 8);
+    background: lighten($primary, 15);
+    border-color: lighten($primary, 15);
     color:      $white; } }
 
 .btn.btn-lt-blue{
@@ -42,8 +43,8 @@
   color:        $white;
   &:hover {
     @include prefix(transition,all 500ms, moz webkit o ms);
-    background: lighten($gray, 8);
-    border-color: lighten($gray, 8);
+    background: lighten($primary, 8);
+    border-color: lighten($primary, 8);
     color:      $white; } }
 
 .btn.btn-gray{
@@ -67,8 +68,8 @@
   color:        $white;
   &:hover {
     @include prefix(transition,all 500ms, moz webkit o ms);
-    background: lighten($gray, 8);
-    border-color: lighten($gray, 8);
+    background: lighten($primary, 8);
+    border-color: lighten($primary, 8);
     color:      $white; } }
 .btn.btn-light-green{
   @include prefix(transition,all 500ms, moz webkit o ms);
@@ -78,8 +79,8 @@
   color:        $white;
   &:hover {
     @include prefix(transition,all 500ms, moz webkit o ms);
-    background: lighten($gray, 8);
-    border-color: lighten($gray, 8);
+    background: lighten($primary, 8);
+    border-color: lighten($primary, 8);
     color:      $white; } }
 .btn.btn-tangerine{
   @include prefix(transition,all 500ms, moz webkit o ms);
@@ -89,6 +90,6 @@
   color:        $white;
   &:hover {
     @include prefix(transition,all 500ms, moz webkit o ms);
-    background: lighten($gray, 8);
-    border-color: lighten($gray, 8);
+    background: lighten($primary, 15);
+    border-color: lighten($primary, 15);
     color:      $white; } }
