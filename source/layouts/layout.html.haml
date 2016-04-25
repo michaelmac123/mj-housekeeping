@@ -53,23 +53,43 @@
     = javascript_include_tag "//cdn.jsdelivr.net/headroomjs/0.5.0/headroom.min.js"
     %script{src: "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js", integrity: "sha256-KXn5puMvxCw+dAYznun+drMdG1IFl3agK0p/pqT9KAo= sha512-2e8qq0ETcfWRI4HJBzQiA3UoyFk6tbNyG+qSaIBZLyW9Xf3sWZHN/lxe9fTh1U45DpPf07yj94KsUHHWe4Yk1A==", crossorigin: "anonymous"}
     = javascript_include_tag :all
-    :javascript
-      var zz6kt300ddqn3i;(function(d, t) {
-      var s = d.createElement(t), options = {
-      'userName':'mjshousekeeping',
-      'formHash':'zz6kt300ddqn3i',
-      'autoResize':true,
-      'height':'813',
-      'async':true,
-      'host':'wufoo.com',
-      'header':'show',
-      'ssl':true};
-      s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'www.wufoo.com/scripts/embed/form.js';
-      s.onload = s.onreadystatechange = function() {
-      var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
-      try { zz6kt300ddqn3i = new WufooForm();zz6kt300ddqn3i.initialize(options);zz6kt300ddqn3i.display(); } catch (e) {}};
-      var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
-      })(document, 'script');
+
+    - if current_page.data.page_name == "get_quote"
+      :javascript
+        var zz6kt300ddqn3i;(function(d, t) {
+        var s = d.createElement(t), options = {
+        'userName':'mjshousekeeping',
+        'formHash':'zz6kt300ddqn3i',
+        'autoResize':true,
+        'height':'813',
+        'async':true,
+        'host':'wufoo.com',
+        'header':'show',
+        'ssl':true};
+        s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'www.wufoo.com/scripts/embed/form.js';
+        s.onload = s.onreadystatechange = function() {
+        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
+        try { zz6kt300ddqn3i = new WufooForm();zz6kt300ddqn3i.initialize(options);zz6kt300ddqn3i.display(); } catch (e) {}};
+        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
+        })(document, 'script');
+    - elsif current_page.data.page_name == "join_our_team"
+      :javascript
+        var m122atct0fftqmg;(function(d, t) {
+        var s = d.createElement(t), options = {
+        'userName':'mjshousekeeping',
+        'formHash':'m122atct0fftqmg',
+        'autoResize':true,
+        'height':'850',
+        'async':true,
+        'host':'wufoo.com',
+        'header':'show',
+        'ssl':true};
+        s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'www.wufoo.com/scripts/embed/form.js';
+        s.onload = s.onreadystatechange = function() {
+        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
+        try { m122atct0fftqmg = new WufooForm();m122atct0fftqmg.initialize(options);m122atct0fftqmg.display(); } catch (e) {}};
+        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
+        })(document, 'script');
 
 
     -# Fonts
@@ -80,7 +100,7 @@
     %link{href: "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css", rel: "stylesheet", integrity: "sha256-7s5uDGW3AHqw6xtJmNNtr+OBRJUlgkNJEo78P4b0yRw= sha512-nNo+yCHEyn0smMxSswnf/OnX6/KwJuZTlNZBjauKhTK0c+zT+q5JOCx0UFhXQ6rJR9jg6Es8gPuD2uZcYDLqSw==", crossorigin: "anonymous"}
     = stylesheet_link_tag :site, media: 'all'
 
-  %body{class: page_classes || 'page'}
+  %body{ class: page_classes || 'page' }
     = partial "layouts/navigation"
     = yield
     = partial "layouts/footer"

@@ -791,16 +791,6 @@ hr{
     border: none;
     padding: 0;
   }
-  label.desc,
-  legend.desc {
-    @include float;
-    padding:{
-      top: 5px;
-      right: 10px;
-    }
-    text-align: right;
-    width: 40%;
-  }
 
   input.text,
   textarea.textarea,
@@ -861,6 +851,11 @@ hr{
   }
 }
 
+form.wufoo {
+  @include prefix(border-radius, 3px o ms moz webkit);
+  border: 1px solid $electic-blue;
+}
+
 .noI {
   form li{
     &.buttons {
@@ -868,13 +863,6 @@ hr{
     }
     &#fo1li14 span {
       margin-right: 1em;
-    }
-    &#fo1li6 div {
-      float: right;
-      width: 58%;
-      textarea.textarea {
-        width: 100%;
-      }
     }
   }
 }
