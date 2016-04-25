@@ -773,7 +773,13 @@ hr{
 }
 
 ////////// Wufoo Overrides //////////
+#wufooFormzz6kt300ddqn3i {
+  min-height: 890px;
+}
 
+#wufooFormm122atct0fftqmg {
+ min-height: 930px;
+}
 .wufoo {
   .info {
     border-bottom: none;
@@ -849,13 +855,27 @@ hr{
       border-color: lighten($primary, 15);
       color:      $white; }
   }
+  textarea.textarea {
+    min-width: 0;
+    width: 95%;
+  }
 }
 
 form.wufoo {
   @include prefix(border-radius, 3px, o ms moz webkit);
   border: 1px solid $electic-blue;
 }
-
+form li.complex div span.full input,
+form li.complex div span.full select,
+form li.complex div span.left input,
+form li.complex div span.right input,
+form li.complex div span.left select,
+form li.complex div span.right select {
+  width: 90%;
+}
+form li.complex div span.right select {
+  width: 101%;
+}
 .noI {
   form li{
     &.buttons {
@@ -864,12 +884,6 @@ form.wufoo {
     }
     &#fo1li14 span {
       margin-right: 1em;
-    }
-    &#fo1li6 div {
-      textarea.textarea {
-        min-width: 0;
-        width: 95%;
-      }
     }
   }
 }
