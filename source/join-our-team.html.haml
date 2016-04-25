@@ -12,40 +12,36 @@
 
 .container.content-section-b
   .row
-    .col-md-12
-      .quote-container.join-our-team
+    .col-md-6
+      .quote-container
         %h4 Let's start with some basic information
         .form-horizontal.quote-form
-          .row
-            .col-md-6
-              .form-group
-                %label{ for: "input1", class: "col-sm-4 control-label"} First Name
-                .col-sm-8
-                  %input{ type:"text", class: "form-control", id: "input1", placeholder: "John"}
-              .form-group
-                %label{ for: "input1", class: "col-sm-4 control-label"} Last Name
-                .col-sm-8
-                  %input{ type:"text", class: "form-control", id: "input1", placeholder: "Doe"}
-              .form-group
-                %label{ for: "input2", class: "col-sm-4 control-label"} Email
-                .col-sm-8
-                  %input{ type:"email", class: "form-control", id: "input2", placeholder: "john.doe@myname.com"}
-            .col-md-6
-              .form-group
-                %label{ for: "input3", class: "col-sm-4 control-label"} Contact Phone
-                .col-sm-8
-                  %input{ type:"phone", class: "form-control", id: "input3", placeholder: "(206) 555-1212"}
-              .form-group
-                %label{ for: "input4", class: "col-sm-4 control-label"} Zip Code
-                .col-sm-8
-                  %select{ type:"select", class: "form-control", id: "input4", placeholder: "12345"}
-                    %options 1
-                    %options 2
-              .form-group
-                %label{ for: "input5", class: "col-sm-4 control-label"} Address
-                .col-sm-8
-                  %textarea{ class: "form-control", id: "input5", row: 5, placeholder: "123 Main Street, Anywhere, US"}
+          .form-group
+            %label{ for: "input1", class: "col-sm-4 control-label"} First Name
+            .col-sm-8
+              %input{ type:"text", class: "form-control", id: "input1", placeholder: "John"}
+          .form-group
+            %label{ for: "input1", class: "col-sm-4 control-label"} Last Name
+            .col-sm-8
+              %input{ type:"text", class: "form-control", id: "input1", placeholder: "Doe"}
+          .form-group
+            %label{ for: "input2", class: "col-sm-4 control-label"} Email
+            .col-sm-8
+              %input{ type:"email", class: "form-control", id: "input2", placeholder: "john.doe@myname.com"}
+          .form-group
+            %label{ for: "input3", class: "col-sm-4 control-label"} Contact Phone
+            .col-sm-8
+              %input{ type:"phone", class: "form-control", id: "input3", placeholder: "(206) 555-1212"}
+          .form-group
+            %label{ for: "input4", class: "col-sm-4 control-label"} Zip Code
+            .col-sm-8
+              %select{ type:"select", class: "form-control", id: "input4", placeholder: "12345"}
+                %options 1
+                %options 2
+
           .form-group
             .col-sm-offset-1.col-sm-10
               %a.btn.btn-tangerine.btn-lg{ href: "#", role: "button"} Next Step: Add some details
+    .col-md-6
+      .content-section-b-intro-img= image_tag "/images/hero/mjs-housekeeping-quote1-img.jpg", class: 'img-reponsive'
 

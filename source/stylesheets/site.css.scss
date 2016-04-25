@@ -774,16 +774,18 @@ hr{
 
 ////////// Wufoo Overrides //////////
 
-.wufoo .info {
-  border-bottom: none;
-  padding: 0;
-  h2 {
-    @include font-size(2);
-    background-color: $electic-blue;
-    color: $white;
-    font-family: $sansFontFamily;
-    margin-top: 0;
-    padding: 10px;
+.wufoo {
+  .info {
+    border-bottom: none;
+    padding: 0;
+    h2 {
+      @include font-size(2);
+      background-color: $electic-blue;
+      color: $white;
+      font-family: $sansFontFamily;
+      margin-top: 0;
+      padding: 10px;
+    }
   }
   fieldset {
     border: none;
@@ -859,8 +861,8 @@ hr{
       width: 100%;
     }
   }
-
 }
+
 
 
 
