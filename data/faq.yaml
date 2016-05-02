@@ -1,4 +1,8 @@
 - faq:
+  id: 13
+  title: "What supplies should I have available?"
+  body: "<b class='darken'>Cleaning products of your choice.</b>"
+- faq:
   id: 1
   title: "What types of payments do your housekeepers accept?"
   body: "Payment is due upon service. Housekeepers can collect personal checks/cash from you directly, and we can take your Visa or MasterCard info over the phone when you book your service."

@@ -18,47 +18,55 @@
     .col-md-12.content-section-b-intro
       %h3.feature-title We are conveniently covering the entire South Sound Area.
       .row
-        .col-md-6
+        .content-section-tiles-3.short
           .row
-            .col-md-2
+            .col-md-12
               .feature-circle-container
                 .feature-circle
                   %span 1
-            .col-md-9
+            .col-md-12
               .feature-bucket
                 %h6 New to MJ's Housekeeping?
                 %p Try our "Eight-Hour Special" for only $158!
+        .content-section-tiles-3.short
           .row
-            .col-md-2
+            .col-md-12
               .feature-circle-container
                 .feature-circle
                   %span 2
-            .col-md-9
+            .col-md-12
               .feature-bucket
                 %h6 Weekly or Bi-weekly Service
-                %p $21/hours*
+                %p $21/hour*
+        .content-section-tiles-3.short
           .row
-            .col-md-2
+            .col-md-12
               .feature-circle-container
                 .feature-circle
                   %span 3
-            .col-md-9
+            .col-md-12
               .feature-bucket
                 %h6 Monthly or Occasional service
-                %p $21/hours, plus a $5 flat fee*
+                %p $21/hour, plus a $5 flat fee*
 
-          .row
-            .col-md-12
-              %a.btn.btn-light-green.btn-lg{ href: "/get-quote", role: "button"} Get a Quote Now!
-              %hr.tight
-              %p><
-                %small><
-                  *We do have a three hour minimum when you book a service with us.
-                  %br><
-                  There are no obligations after your first service to continue with us afterwards.
+      .row.feature-button-container
+        .col-md-12
+          %a.btn.btn-light-green.btn-lg{ href: "/get-quote", role: "button"} Get a Quote Now!
+          %p><
+            %small><
+              *We do have a three hour minimum when you book a service with us.
+              %br><
+              There are no obligations after your first service to continue with us afterwards.
+          %hr
 
+      .row
         .col-md-6
-          .content-section-b-intro-img= image_tag "/images/hero/mjs-map-service-area.png", class: 'img-reponsive'
+          %h3 For Tacoma call 253-926-1012
+          .content-section-b-intro-img= image_tag "/images/hero/mjs-map-service-area-tacoma.jpg", class: 'img-reponsive'
+        .col-md-6
+          %h3 For Olympia call 360-359-4988.
+          .content-section-b-intro-img= image_tag "/images/hero/mjs-map-service-area-olympia.jpg", class: 'img-reponsive'
+
       .row
         .col-md-12.content-section-b-intro
           %h3.feature-title.col-md-margin-bottom-0 See what our clients are saying…
