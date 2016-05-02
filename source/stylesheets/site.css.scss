@@ -459,7 +459,7 @@ hr{
     &.join-our-team {
       border: 3px solid rgba($brand-blue, 0.5);
       color: $brand-blue;
-      margin-top: 70px;
+      margin-top: 90px;
       @include respond-to('small') {
         margin:{
           top: 5px;
@@ -652,6 +652,7 @@ hr{
       color: $gray;
       .darken {
         color: darken($gray, 20);
+        text-shadow: 1px 1px 0 rgba(darken($gray, 20), 0.35);
       }
     }
     .panel {

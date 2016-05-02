@@ -1,8 +1,4 @@
 - faq:
-  id: 13
-  title: "What supplies should I have available?"
-  body: "<b class='darken'>Cleaning products of your choice.</b>"
-- faq:
   id: 1
   title: "What types of payments do your housekeepers accept?"
   body: "Payment is due upon service. Housekeepers can collect personal checks/cash from you directly, and we can take your Visa or MasterCard info over the phone when you book your service."
@@ -40,6 +36,7 @@ You can download our <a href='/images/forms/mjs_housekeeping_ideas_task_list.pdf
   title: "What supplies should I have available? "
   body: "Recommended supplies to have available are:"
   body_points:
+    - <b class='darken'>Cleaning products of your choice.</b>
     - A vacuum that is in good repair, attachments, extra belts and bags, and the instruction manual
     - A light-weight, portable vacuum for the stairs and the 2nd/3rd floor(s)
     - Broom, dust mop and wet mop, with plastic bucket
